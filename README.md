@@ -59,9 +59,11 @@ Sanitizing the input of name should be done so only alphabet characters are allo
 Path to file is saved in the appSettings created by C#'s webapi that is instantly loaded on building the webapi
 
 Rebeld service in business manages logging and cache, and just maps Dtos to entities for the repository to work with.
+
 DomainEntities are not necessary on this exam but is good to have them already there if we needed to process the data in some way in the business layer.
 
 Repository saves entries as **{name},_rebeld (name) on (planet) at (datetime)_**
+
 Repository gets the value of such entry and passes it back as a **RebeldSightingDto** for easier reading/mantenibility instead of a plain string
 
 
@@ -73,6 +75,7 @@ Repository gets the value of such entry and passes it back as a **RebeldSighting
 The optimized function is made right below to show implementation but its not used
 		
 I made unit tests for the repository searches that check errors returned and normal flow when finds a name
+
 I dont remember of the top of my head how to mock the webhostbuilder so I didn't do integration testing
 
 
