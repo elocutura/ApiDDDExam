@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VY.Rebeld.Business.Contracts\VY.Rebeld.Business.Contracts.csproj" />
+    <ProjectReference Include="..\VY.Rebeld.Data.Contracts\VY.Rebeld.Data.Contracts.csproj" />
+    <ProjectReference Include="..\VY.Rebeld.Data.Impl\VY.Rebeld.Data.Impl.csproj" />
+    <ProjectReference Include="..\VY.Rebeld.Dtos\VY.Rebeld.Dtos.csproj" />
+    <ProjectReference Include="..\VY.Rebeld.Infrastructure.Impl\VY.Rebeld.Infrastructure.Impl.csproj" />
+  </ItemGroup>
+
+</Project>
